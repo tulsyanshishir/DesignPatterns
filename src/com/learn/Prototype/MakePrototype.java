@@ -20,7 +20,9 @@ public class MakePrototype {
 		System.out.println(r1.equals(r2));
 		
 		Circle c1 = new Circle();
-		c1.radius = 10;	
+		c1.radius = 10;
+		c1.x = 10;
+		c1.y = 10;
 		shapes.add(c1);
 		
 		Circle c2 = (Circle) c1.clone();
