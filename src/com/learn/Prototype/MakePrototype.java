@@ -9,12 +9,15 @@ public class MakePrototype {
 		List<Shape> shapes = new ArrayList<>();
 		
 		Rectangle r1 = new Rectangle();
-		r1.width =  r1.x = 10;
-		r1.height = r1.y = 20;		
+		//r1.width =  r1.x = 10;
+		//r1.height = r1.y = 20;	
+		r1.width = 10;
+		r1.height = 20;	
 		shapes.add(r1);
 		
 		Rectangle r2 = (Rectangle) r1.clone();
 		System.out.println("R1 width= "+r1.width+" "+"R2 width= "+r2.width);
+		System.out.println("R1 height= "+r1.height+" "+"R2 height= "+r2.height);
 		shapes.add(r2);
 		
 		System.out.println(r1.equals(r2));
